@@ -7,7 +7,7 @@ class MilestonesController < ApplicationController
 
   def create
     @milestone = Milestone.create(
-      image_id: params[:image_id],
+      child_id: params[:child_id],
       milestone_category: params[:milestone_category],
       title: params[:title],
       description: params[:description],
@@ -24,7 +24,7 @@ class MilestonesController < ApplicationController
   def update
     @milestone = Milestone.find_by(id: params[:id])
     @milestone.update(
-      image_id: params[:image_id] || @milestone.image_id,
+      child_id: params[:child_id] || @milestone.child_id,
       milestone_category: params[:milestone_category] || @milestone.milestone_category,
       title: params[:title] || @milestone.title,
       description: params[:description] || @milestone.description,
