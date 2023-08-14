@@ -9,4 +9,10 @@ Rails.application.routes.draw do
   get "children/:id" => "children#show"
   patch "children/:id" => "children#update"
   delete "children/:id" => "children#destroy"
+
+  get "/milestones" => "milestones#index"
+  post "/milestones" => "milestones#create"
+  get "milestones/:id" => "milestones#show"
+  patch "milestones/:id" => "milestones#update"
+  delete "milestones/:id" => "milestones#destroy"
 end
