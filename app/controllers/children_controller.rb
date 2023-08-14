@@ -32,4 +32,10 @@ class ChildrenController < ApplicationController
     )
     render :show
   end
+
+  def destroy
+    @child = Child.find_by(id: params[:id])
+    @child.destroy
+    render json: { message: "Child deleted successfully" }
+  end
 end

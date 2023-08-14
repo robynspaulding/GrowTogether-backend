@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   post "/children" => "children#create"
   get "children/:id" => "children#show"
   patch "children/:id" => "children#update"
+  delete "children/:id" => "children#destroy"
 end
