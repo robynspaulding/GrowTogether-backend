@@ -6,4 +6,5 @@ Rails.application.routes.draw do
 
   get "/children" => "children#index"
   post "/children" => "children#create"
+  get "children/:id" => "children#show"
 end

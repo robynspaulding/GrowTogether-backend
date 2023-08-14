@@ -15,4 +15,9 @@ class ChildrenController < ApplicationController
     )
     render :show
   end
+
+  def show
+    @child = Child.find_by(id: params[:id])
+    render :show
+  end
 end
