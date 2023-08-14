@@ -20,4 +20,16 @@ class ChildrenController < ApplicationController
     @child = Child.find_by(id: params[:id])
     render :show
   end
+
+  def update
+    @child = Child.find_by(id: params[:id])
+    @child.update(
+      user_id: params[:user_id] || @child.user_id,
+      milestone_category: params[:milestone_category] || @child.milestone_category,
+      name: params[:name] || @child.name,
+      dob: params[:dob] || @child.dob,
+      profile_image: params[:profile_image] || @child.profile_image,
+    )
+    render :show
+  end
 end
