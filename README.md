@@ -1,25 +1,40 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# GrowTogether-backend 
+Ruby on Rails API
 
-Things you may want to cover:
+Why use GrowTogether app? As parents and caregivers know already, remembering the little details can be difficult, especially when you are in "new-born survival mode", and not everyone has experience with babies and kids to know what to look for or how to play with them. 
 
-* Ruby version
+This is why this app will include:
+- Early Childhood Education (ECE) Resources
+- Developmental Milestone Tracker
+- Reminder feature for appointments and events
+- Photo Album
+ 
 
-* System dependencies
+# Technology:
+- <a href="https://github.com/robynspaulding/GrowTogether-backend">Ruby on Rails backend - This Repo!</a>
+- <a href="https://github.com/pdhende/GrowTogether-frontend">React.js frontend</a>
+- TBD
 
-* Configuration
 
-* Database creation
+## Installation
 
-* Database initialization
+```bash
+git clone https://github.com/robynspaulding/GrowTogether-backend.git
+bundle install
+rails db:create db:migrate db:seed
+```
 
-* How to run the test suite
+## Usage
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+rails server
+```
 
-* Deployment instructions
+I use HTTPie to test my routes and endpoints.
 
-* ...
-# GrowTogether-backend
+## Future plans
+
+This project is a work in progress with many features yet to come! 
+
