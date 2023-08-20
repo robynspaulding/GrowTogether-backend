@@ -12,22 +12,33 @@ This is why this app will include:
 - Photo Album
  
 
-# Technology:
+## Repos:
 - <a href="https://github.com/robynspaulding/GrowTogether-backend">Ruby on Rails backend - This Repo!</a>
 - <a href="https://github.com/pdhende/GrowTogether-frontend">React.js frontend</a>
-- TBD
 
-
+## Ruby Version
+ - ruby 3.1.1p18
+   
 ## Installation
-
 ```bash
 git clone https://github.com/robynspaulding/GrowTogether-backend.git
 bundle install
 rails db:create db:migrate db:seed
 ```
 
-## Usage
+## Dependencies 
+```
+- bootsnap
+- debug
+- jbuilder
+- pg (~> 1.1)
+- puma (~> 5.0)
+- rack-cors
+- rails (~> 7.0.6)
+- tzinfo-data
+```
 
+## Usage
 ```bash
 rails server
 ```
