@@ -36,6 +36,7 @@ rails db:create db:migrate db:seed
 - rack-cors
 - rails (~> 7.0.6)
 - tzinfo-data
+- jwt
 ```
 
 ## Usage
