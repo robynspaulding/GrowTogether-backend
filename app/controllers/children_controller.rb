@@ -1,5 +1,6 @@
 class ChildrenController < ApplicationController
   before_action :authenticate_user
+  before_action :child, only:[:show, :update, :destroy]
   
   def index
     @children = current_user.children
@@ -15,12 +16,10 @@ class ChildrenController < ApplicationController
   end
 
   def show
-    @child = Child.find_by(id: params[:id])
     render :show
   end
 
   def update
-    @child = Child.find_by(id: params[:id])
     @child.update(
       name: params[:name] || @child.name,
       dob: params[:dob] || @child.dob,
@@ -30,7 +29,6 @@ class ChildrenController < ApplicationController
   end
 
   def destroy
-    @child = Child.find_by(id: params[:id])
     @child.destroy
     render json: { message: "Child deleted successfully" }
   end
@@ -38,4 +36,10 @@ class ChildrenController < ApplicationController
   def child_params
     params.permit(:name, :dob, :profile_image)
   end
+
+  private
+    def child
+      @child ||= Child.find_by!(id: params.require(:id))
+    end
+
 end
