@@ -1,5 +1,7 @@
 class MilestonesController < ApplicationController
 
+  before_action :milestone, only:[:show, :update, :destroy]
+
   def index
     @milestones = Milestone.all
     render :index 
@@ -11,12 +13,10 @@ class MilestonesController < ApplicationController
   end
 
   def show
-    @milestone = Milestone.find_by(id: params[:id])
     render :show
   end
 
   def update
-    @milestone = Milestone.find_by(id: params[:id])
     @milestone.update(
       child_id: params[:child_id] || @milestone.child_id,
       milestone_category: params[:milestone_category] || @milestone.milestone_category,
@@ -28,7 +28,6 @@ class MilestonesController < ApplicationController
   end
 
   def destroy
-    @milestone = Milestone.find_by(id: params[:id])
     @milestone.destroy
     render json: { message: "Milestone deleted successfully" }
   end
@@ -36,5 +35,10 @@ class MilestonesController < ApplicationController
   def milestone_params
     params.permit(:child_id, :milestone_category, :title, :description, :date)
   end
+
+  private
+    def milestone
+      @milestone ||= Milestone.find_by!(id: params.require(:id))
+    end
 
 end
