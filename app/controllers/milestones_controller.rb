@@ -6,13 +6,7 @@ class MilestonesController < ApplicationController
   end
 
   def create
-    @milestone = Milestone.create(
-      child_id: params[:child_id],
-      milestone_category: params[:milestone_category],
-      title: params[:title],
-      description: params[:description],
-      date: params[:date],
-    )
+    @milestone = Milestone.create(milestone_params)
     render :show
   end
 
@@ -37,6 +31,10 @@ class MilestonesController < ApplicationController
     @milestone = Milestone.find_by(id: params[:id])
     @milestone.destroy
     render json: { message: "Milestone deleted successfully" }
+  end
+
+  def milestone_params
+    params.permit(:child_id, :milestone_category, :title, :description, :date)
   end
 
 end
