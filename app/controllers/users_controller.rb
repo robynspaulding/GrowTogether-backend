@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+
   def create
     user = User.new(user_params)
 
@@ -10,13 +11,20 @@ class UsersController < ApplicationController
     end
   end
 
+
+  def index
+    @user = current_user
+    render json: @user
+    # render :index
+  end
+
   private def user_params
     params.permit(
       :name,
       :email,
       :password,
       :password_confirmation,
-      :profilePicURL
+      :profile_pic_URL
     )
   end
 
