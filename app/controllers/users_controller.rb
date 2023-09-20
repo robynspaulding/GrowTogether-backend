@@ -15,7 +15,6 @@ class UsersController < ApplicationController
   def index
     @user = current_user
     render json: @user
-    # render :index
   end
 
   private def user_params
@@ -24,7 +23,7 @@ class UsersController < ApplicationController
       :email,
       :password,
       :password_confirmation,
-      :profile_pic_URL
+      :profilePicURL
     )
   end
 
