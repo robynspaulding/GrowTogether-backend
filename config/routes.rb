@@ -16,6 +16,6 @@ Rails.application.routes.draw do
   get "/milestones/:child_id" => "milestones#index" #renders only those milestones belonging to the specific child
   post "/milestones" => "milestones#create"
   get "milestones/:id" => "milestones#show"
-  # patch "milestones/:id" => "milestones#update"
+  patch "milestones/:id" => "milestones#update"
   delete "milestones/:id" => "milestones#destroy"
 end
