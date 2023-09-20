@@ -11,7 +11,7 @@ User.create(
   email: "harry@test.com",
   password: "password",
   password_confirmation: "password",
-  profilePicURL: "the_boy_who_lived.jpg"
+  profilePicURL: "https://i.pinimg.com/564x/7e/42/9d/7e429d9363116f1d9aa41c27ef4c14c2.jpg"
 )
 
 Child.create(
@@ -65,7 +65,7 @@ User.create(
   email: "morticia@test.com",
   password: "password",
   password_confirmation: "password",
-  profilePicURL: "morticia.jpg"
+  profilePicURL: "https://i.etsystatic.com/37901093/r/il/9c5e53/5262424606/il_1588xN.5262424606_pzqt.jpg"
 
 )
 
