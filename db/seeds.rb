@@ -53,7 +53,7 @@ Milestone.create(
 )
 
 Milestone.create(
-  child_id: 1,
+  child_id: 2,
   date: "10/13/2007",
   milestone_category: "Physical",
   title: "First Steps",
