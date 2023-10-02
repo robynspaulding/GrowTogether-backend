@@ -49,7 +49,7 @@ Milestone.create(
   date: "08/23/2007",
   milestone_category: "Communication",
   title: "First Word - Mama",
-  description: "Lorem Ipsum has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  description: "Lorem Ipsum has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 )
 
 Milestone.create(
@@ -104,7 +104,7 @@ Milestone.create(
   date: "08/23/2010",
   milestone_category: "Communication",
   title: "First Word - Bomb!",
-  description: "Lorem Ipsum has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  description: "Lorem Ipsum has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 )
 
 Milestone.create(
@@ -112,5 +112,17 @@ Milestone.create(
   date: "12/25/2010",
   milestone_category: "Physical",
   title: "Rolled over - down the stairs",
-  description: "Lorem Ipsum has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  description: "Lorem Ipsum has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+)
+
+SavedArticle.create(
+  user_id: 1,
+  title: "Choosing Safe Toys",
+  url: "https://kidshealth.org/en/parents/safe-toys.html"
+)
+
+SavedArticle.create(
+  user_id: 2,
+  title: "The Magic of Play: How It Inspires & Aids Early Development",
+  url: "https://kidshealth.org/en/parents/play-magic.html"
 )
