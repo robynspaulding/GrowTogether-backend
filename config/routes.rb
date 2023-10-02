@@ -19,4 +19,9 @@ Rails.application.routes.draw do
   get "milestones/:id" => "milestones#show"
   patch "milestones/:id" => "milestones#update"
   delete "milestones/:id" => "milestones#destroy"
+
+
+  get "/saved_articles" => "saved_articles#index"
+  post "/saved_articles" => "saved_articles#create"
+  delete "/saved_articles/:id" => "saved_articles#destroy"
 end
