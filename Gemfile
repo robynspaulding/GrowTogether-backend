@@ -16,6 +16,7 @@ gem "puma", "~> 5.0"
 gem "jbuilder"
 gem "jwt"
 
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -47,3 +48,5 @@ group :development do
   # gem "spring"
 end
 
+gem 'httparty', '~> 0.13.7'
+gem "rss"
