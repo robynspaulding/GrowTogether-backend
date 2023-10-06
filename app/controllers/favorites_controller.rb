@@ -20,7 +20,7 @@ class FavoritesController < ApplicationController
   end
 
   def item_params
-    params.permit(:title, :link, :description)
+    params.permit(:title, :link, :description, :thumbnail)
   end
 
 end
