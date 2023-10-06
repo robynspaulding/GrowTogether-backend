@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   delete "milestones/:id" => "milestones#destroy"
 
 
-  get "/saved_articles" => "saved_articles#index"
-  post "/saved_articles" => "saved_articles#create"
-  delete "/saved_articles/:id" => "saved_articles#destroy"
+  get "/favorites" => "favorites#index"
+  post "/favorites" => "favorites#create"
+  delete "/favorites/:id" => "favorites#destroy"
 end

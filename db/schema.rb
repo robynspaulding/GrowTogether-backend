@@ -10,9 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_02_162710) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_06_160440) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "articles", force: :cascade do |t|
+    t.string "title"
+    t.string "link"
+    t.text "description"
+    t.datetime "pub_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "children", force: :cascade do |t|
     t.integer "user_id"
@@ -23,6 +32,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_02_162710) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "favorites", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "title"
+    t.string "url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "thumbnail"
+  end
+
   create_table "milestones", force: :cascade do |t|
     t.string "title"
     t.string "date"
@@ -31,14 +49,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_02_162710) do
     t.datetime "updated_at", null: false
     t.integer "child_id"
     t.string "milestone_category"
-  end
-
-  create_table "saved_articles", force: :cascade do |t|
-    t.integer "user_id"
-    t.string "title"
-    t.string "url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
