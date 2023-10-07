@@ -182,6 +182,7 @@ DEPENDENCIES
   httparty (~> 0.13.7)
   jbuilder
   jwt
+  nokogiri
   pg (~> 1.1)
   puma (~> 5.0)
   rack-cors
