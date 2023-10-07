@@ -24,4 +24,7 @@ Rails.application.routes.draw do
   get "/favorites" => "favorites#index"
   post "/favorites" => "favorites#create"
   delete "/favorites/:id" => "favorites#destroy"
+
+  get "/fetch_data" => "feed_data#fetch_data"
+
 end

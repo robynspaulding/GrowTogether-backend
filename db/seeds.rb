@@ -118,13 +118,15 @@ Milestone.create(
 Favorite.create(
   user_id: 1,
   title: "Choosing Safe Toys",
-  url: "https://kidshealth.org/en/parents/safe-toys.html",
+  link: "https://kidshealth.org/en/parents/safe-toys.html",
+  description: "Lorem Ipsum has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing ",
   thumbnail: "test thumbnail"
 )
 
 Favorite.create(
   user_id: 2,
   title: "The Magic of Play: How It Inspires & Aids Early Development",
-  url: "https://kidshealth.org/en/parents/play-magic.html",
+  link: "https://kidshealth.org/en/parents/play-magic.html",
+  discription: "Lorem Ipsum has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing",
   thumbnail: "test thumbnail"
 )
