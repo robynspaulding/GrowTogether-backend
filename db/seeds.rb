@@ -23,7 +23,7 @@ Child.create(
 
 Milestone.create(
   child_id: 1,
-  date: "05/13/2005",
+  date: "2005-05-13",
   milestone_category: "Physical",
   title: "First Steps",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
@@ -31,7 +31,7 @@ Milestone.create(
 
 Milestone.create(
   child_id: 1,
-  date: "07/23/2005",
+  date: "2005-07-23",
   milestone_category: "Cognative",
   title: "tracked mom with eyes",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
@@ -46,7 +46,7 @@ Child.create(
 
 Milestone.create(
   child_id: 2,
-  date: "08/23/2007",
+  date: "2007-12-30",
   milestone_category: "Communication",
   title: "First Word - Mama",
   description: "Lorem Ipsum has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
@@ -54,7 +54,7 @@ Milestone.create(
 
 Milestone.create(
   child_id: 2,
-  date: "10/13/2007",
+  date: "2007-11-02",
   milestone_category: "Physical",
   title: "First Steps",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
@@ -78,7 +78,7 @@ Child.create(
 
 Milestone.create(
   child_id: 3,
-  date: "05/13/2007",
+  date: "2007-05-13",
   milestone_category: "Physical",
   title: "Held a Rapier",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
@@ -101,7 +101,7 @@ Child.create(
 
 Milestone.create(
   child_id: 4,
-  date: "08/23/2010",
+  date: "2001-12-06",
   milestone_category: "Communication",
   title: "First Word - Bomb!",
   description: "Lorem Ipsum has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
@@ -109,7 +109,7 @@ Milestone.create(
 
 Milestone.create(
   child_id: 4,
-  date: "12/25/2010",
+  date: "2010-06-14",
   milestone_category: "Physical",
   title: "Rolled over - down the stairs",
   description: "Lorem Ipsum has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
