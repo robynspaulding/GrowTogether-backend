@@ -50,3 +50,4 @@ end
 
 gem 'httparty', '~> 0.13.7'
 gem "rss"
+gem  "nokogiri"
