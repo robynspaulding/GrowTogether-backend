@@ -10,7 +10,7 @@ class FavoritesController < ApplicationController
     @favorite.user_id = current_user.id
     
     @favorite.save
-    render :show
+    render json: { status: "success", message: "article saved to favorites" }
   end
 
   def destroy

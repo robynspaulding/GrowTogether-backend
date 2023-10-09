@@ -10,15 +10,15 @@ Rails.application.routes.draw do
 
   get "/children" => "children#index"
   post "/children" => "children#create"
-  get "children/:id" => "children#show"
-  patch "children/:id" => "children#update"
-  delete "children/:id" => "children#destroy"
+  get "/children/:id" => "children#show"
+  patch "/children/:id" => "children#update"
+  delete "/children/:id" => "children#destroy"
 
   get "/milestones/:child_id" => "milestones#index" #renders only those milestones belonging to the specific child
   post "/milestones" => "milestones#create"
-  get "milestones/:id" => "milestones#show"
-  patch "milestones/:id" => "milestones#update"
-  delete "milestones/:id" => "milestones#destroy"
+  get "/milestones/:id" => "milestones#show"
+  patch "/milestones/:id" => "milestones#update"
+  delete "/milestones/:id" => "milestones#destroy"
 
 
   get "/favorites" => "favorites#index"
