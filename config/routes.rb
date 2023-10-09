@@ -27,4 +27,10 @@ Rails.application.routes.draw do
 
   get "/fetch_data" => "feed_data#fetch_data"
 
+  get "/reminders" => "reminders#index"
+  post "/reminders" => "reminders#create"
+  get "/reminders/:id" => "reminders#show"
+  patch "/reminders/:id" => "reminders#update"
+  delete "/reminders/:id" => "reminders#destroy"
+
 end
