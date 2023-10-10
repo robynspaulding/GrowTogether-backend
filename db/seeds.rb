@@ -150,3 +150,35 @@ Reminder.create(
   date: "2022-09-13",
   time: "6:30 PM EST"
 )
+
+Photo.create(
+  child_id: 1,
+  milestone_id: 1,
+  link: "https://static.vecteezy.com/system/resources/previews/013/076/840/non_2x/baby-first-steps-vector.jpg",
+  description: "So excited that James took his first steps in the living room today!",
+  date: "2005-05-13"  
+)
+
+Photo.create(
+  child_id: 2,
+  milestone_id: 3,
+  link: "https://c8.alamy.com/comp/2DKEM23/babbling-turquoise-concept-icon-early-speech-baby-talking-toddler-make-sound-childhood-development-idea-thin-line-illustration-vector-isolated-ou-2DKEM23.jpg",
+  description: "Albus said Mama today when Genny was snuggling him during his nap!!",
+  date: "2007-12-30"  
+)
+
+Photo.create(
+  child_id: 3,
+  milestone_id: 5,
+  link: "https://ih1.redbubble.net/image.4567751092.1020/raf,750x1000,075,t,fafafa:ca443f4786.u1.jpg",
+  description: "Wednesday showed true proficiency with a rapier today, we are so proud, though the neighbors looked slightly alarmed",
+  date: "2007-05-13"  
+)
+
+Photo.create(
+  child_id: 4,
+  milestone_id: 8,
+  link: "https://64.media.tumblr.com/tumblr_ma4cyrd3Pe1rafd2eo1_1280.jpg",
+  description: "Pugsly took a tumble down the main stairs today, he managed ot crash into both the bear and Lurch - giggling all the while, such a smart boy!",
+  date: "2010-06-14"  
+)
