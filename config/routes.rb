@@ -33,4 +33,11 @@ Rails.application.routes.draw do
   patch "/reminders/:id" => "reminders#update"
   delete "/reminders/:id" => "reminders#destroy"
 
+  get "/child_photos/:child_id" => "photos#index_by_child" 
+  get "/milestone_photos/:milestone_id" => "photos#index_by_milestone"
+  post "/photos" => "photos#create"
+  get "/photos/:id" => "photos#show"
+  patch "/photos/:id" => "photos#update"
+  delete "/photos/:id" => "photos#destroy"
+
 end
