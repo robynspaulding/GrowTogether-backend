@@ -1,52 +1,98 @@
-# README
+# GrowTogether Backend
 
-# GrowTogether-backend 
-Ruby on Rails API
+![Ruby](https://img.shields.io/badge/Ruby-3.1.1-green)
+![Rails](https://img.shields.io/badge/Rails-7.0.7-red)
 
-Why use GrowTogether app? As parents and caregivers know already, remembering the little details can be difficult, especially when you are in "new-born survival mode", and not everyone has experience with babies and kids to know what to look for or how to play with them. 
+## Overview
 
-This is why this app will include:
-- Early Childhood Education (ECE) Resources
-- Developmental Milestone Tracker
-- Reminder feature for appointments and events
-- Photo Album
- 
+GrowTogether is an app that provides a platform for users to access resources that will help them learn about their child's development and document milestones in their children's lives from birth to Early Childhood. It includes the following features:
 
-## Repos:
-- <a href="https://github.com/robynspaulding/GrowTogether-backend">Ruby on Rails backend - This Repo!</a>
-- <a href="https://github.com/pdhende/GrowTogether-frontend">React.js frontend</a>
+- **Resources**: Access educational resources to support your child's development.
 
-## Ruby Version
- - ruby 3.1.1p18
+- **Milestone Tracker**: Keep track of your child's milestones and development progress.
+
+- **Reminders**: Set and receive reminders for important events or tasks related to your child's growth.
+
+- **Photo Album**: Create a digital photo album to cherish and share precious moments in your child's life.
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Dependencies](#dependencies)
+- [More Info](#more-info)
+
+## Getting Started
+
+To get started with this backend, follow these steps:
+
+1. Clone this repository to your local machine:
+
+   ```bash
+   git clone https://github.com/robynspaulding/GrowTogether-backend.git
    
-## Installation
-```bash
-git clone https://github.com/robynspaulding/GrowTogether-backend.git
-bundle install
-rails db:create db:migrate db:seed
-```
+2. Install the required gems:
 
-## Dependencies 
-```
-- bootsnap
-- debug
-- jbuilder
-- pg (~> 1.1)
-- puma (~> 5.0)
-- rack-cors
-- rails (~> 7.0.6)
-- tzinfo-data
-- jwt
-```
+   ```bash
+   bundle install
 
-## Usage
-```bash
-rails server
-```
+3. Set up your database and run migrations:
 
-I use HTTPie to test my routes and endpoints.
+   ```bash
+   rails db:create
+   rails db:migrate
+   
+4. Start the Rails server:
 
-## Future plans
+   ```bash
+   rails server
+The backend should now be running locally at http://localhost:3000.
 
-This project is a work in progress with many features yet to come! 
+
+## Dependencies
+
+The backend is built with Ruby on Rails and relies on several gems and packages to operate effectively. Here are the main dependencies:
+
+### Ruby and Rails
+
+- **Ruby 3.1.1**: The programming language used.
+- **Rails 7.0.7**: The web application framework for Ruby.
+
+### Database
+
+- **PostgreSQL (pg gem)**: The relational database used for storing application data.
+
+### Authentication and Security
+
+- **Bcrypt**: A password hashing algorithm.
+- **JWT (JSON Web Tokens)**: For user authentication and authorization.
+
+### HTTP Client
+
+- **HTTParty**: A popular Ruby HTTP client.
+
+### API Documentation
+
+- **JBuilder**: A templating engine for generating JSON documents.
+
+### Web Scraping
+
+- **Nokogiri**: A Ruby gem for parsing HTML and XML.
+- **RSS**: A Ruby library for parsing RSS feeds.
+
+### Server
+
+- **Puma**: A simple, fast, and highly concurrent HTTP server for hosting the Rails application.
+
+### Cross-Origin Requests
+
+- **Rack CORS**: Middleware for handling Cross-Origin Resource Sharing (CORS).
+
+### Development and Debugging
+
+- **Bootsnap**: Speeds up the boot time of the Rails application.
+- **Debug**: A Ruby library for debugging.
+- **Rack Test**: A small, simple testing API for Rack applications.
+
+## More Info
+For more information about the GrowTogether project, visit the <a href="https://github.com/pdhende/GrowTogether-frontend">frontend repository</a>
 
