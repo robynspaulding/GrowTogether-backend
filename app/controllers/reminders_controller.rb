@@ -26,7 +26,6 @@ class RemindersController < ApplicationController
       description: params[:description] || @reminder.description,
       notes: params[:notes] || @reminder.notes,
       date: params[:date] || @reminder.date,
-      time: params[:time] || @reminder.time,
     )
     render :show
   end
@@ -37,7 +36,7 @@ class RemindersController < ApplicationController
   end
 
   def reminder_params
-    params.permit(:child_name, :category, :description, :notes, :date, :time)
+    params.permit(:child_name, :category, :description, :notes, :date)
   end
 
   private
