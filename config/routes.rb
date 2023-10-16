@@ -11,13 +11,13 @@ Rails.application.routes.draw do
   get "/children" => "children#index"
   post "/children" => "children#create"
   get "/children/:id" => "children#show"
-  patch "/children/:id" => "children#update"
+  put "/children/:id" => "children#update"
   delete "/children/:id" => "children#destroy"
 
   get "/milestones/:child_id" => "milestones#index" #renders only those milestones belonging to the specific child
   post "/milestones" => "milestones#create"
   get "/milestones/:id" => "milestones#show"
-  patch "/milestones/:id" => "milestones#update"
+  put "/milestones/:id" => "milestones#update"
   delete "/milestones/:id" => "milestones#destroy"
 
 
@@ -30,14 +30,14 @@ Rails.application.routes.draw do
   get "/reminders" => "reminders#index"
   post "/reminders" => "reminders#create"
   get "/reminders/:id" => "reminders#show"
-  patch "/reminders/:id" => "reminders#update"
+  put "/reminders/:id" => "reminders#update"
   delete "/reminders/:id" => "reminders#destroy"
 
   get "/child_photos/:child_id" => "photos#index_by_child" 
   get "/milestone_photos/:milestone_id" => "photos#index_by_milestone"
   post "/photos" => "photos#create"
   get "/photos/:id" => "photos#show"
-  patch "/photos/:id" => "photos#update"
+  put "/photos/:id" => "photos#update"
   delete "/photos/:id" => "photos#destroy"
 
 end
