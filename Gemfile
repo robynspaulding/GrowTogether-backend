@@ -51,3 +51,5 @@ end
 gem 'httparty', '~> 0.13.7'
 gem "rss"
 gem  "nokogiri"
+
+gem 'ElasticEmail', '~> 4.0.20'
