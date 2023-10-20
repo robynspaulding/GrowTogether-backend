@@ -137,8 +137,7 @@ Reminder.create(
   category: "Parent Teacher Meeting",
   description: "Meeting with Professor McGonagall -Transfiguration.",
   notes: "Professor shared her concern about James' occasional impatience when it comes to mastering complex spells. Ask her about suggestions, times she or someone else is free to tutor, what he is doing in class well that we can celebrate",
-  date: "2015-10-23",
-  time: "7:00 PM GMT+1"
+  date: "2015-10-23"
 )
 
 Reminder.create(
@@ -147,8 +146,7 @@ Reminder.create(
   category: "Parent Teacher Meeting",
   description: "Meeting with Ms. Grimwood -Potions, and Mr. Ravens -Spellcraft",
   notes: "Ms. Grimwood shared her delight in Wednesday's advanced potion-making skills, citing her penchant for crafting unique, bewitching concoctions. Mr. Ravenclaw, on the other hand, praised Wednesday's insightful contributions to the class discussions on ancient curses and spellcraft. ",
-  date: "2022-09-13",
-  time: "6:30 PM EST"
+  date: "2022-09-13"
 )
 
 Photo.create(
@@ -185,4 +183,33 @@ Photo.create(
   image: "https://64.media.tumblr.com/tumblr_ma4cyrd3Pe1rafd2eo1_1280.jpg",
   description: "Pugsly took a tumble down the main stairs today, he managed ot crash into both the bear and Lurch - giggling all the while, such a smart boy!",
   date: "2010-06-14"  
+)
+
+Contact.create(
+  user_id: 1,
+  name: "Ginny Potter",
+  email_address: "ginny@test.com",
+  contact_type: "Family" 
+)
+
+Contact.create(
+  user_id: 1,
+  name: "Minerva McGonagall",
+  email_address: "minerva@test.com",
+  contact_type: "School" 
+)
+
+
+Contact.create(
+  user_id: 2,
+  name: "Grandmama",
+  email_address: "bestwitch@test.com",
+  contact_type: "Family" 
+)
+
+Contact.create(
+  user_id: 2,
+  name: "Mbogo Mbogo",
+  email_address: "MbogoMD@test.com",
+  contact_type: "Doctor" 
 )
