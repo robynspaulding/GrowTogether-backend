@@ -40,4 +40,6 @@ Rails.application.routes.draw do
   put "/photos/:id" => "photos#update"
   delete "/photos/:id" => "photos#destroy"
 
+  post 'send_email' => 'emails#send_email'
+  
 end
