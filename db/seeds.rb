@@ -137,7 +137,7 @@ Reminder.create(
   category: "Parent Teacher Meeting",
   description: "Meeting with Professor McGonagall -Transfiguration.",
   notes: "Professor shared her concern about James' occasional impatience when it comes to mastering complex spells. Ask her about suggestions, times she or someone else is free to tutor, what he is doing in class well that we can celebrate",
-  date: "2015-10-23"
+  date: "2023-10-23"
 )
 
 Reminder.create(
@@ -146,7 +146,7 @@ Reminder.create(
   category: "Parent Teacher Meeting",
   description: "Meeting with Ms. Grimwood -Potions, and Mr. Ravens -Spellcraft",
   notes: "Ms. Grimwood shared her delight in Wednesday's advanced potion-making skills, citing her penchant for crafting unique, bewitching concoctions. Mr. Ravenclaw, on the other hand, praised Wednesday's insightful contributions to the class discussions on ancient curses and spellcraft. ",
-  date: "2022-09-13"
+  date: "2023-09-13"
 )
 
 Photo.create(
