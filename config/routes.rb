@@ -42,4 +42,9 @@ Rails.application.routes.draw do
 
   post 'send_email' => 'emails#send_email'
   
+  get "/contacts" => "contacts#index"
+  post "/contacts" => "contacts#create"
+  get "/contacts/:id" => "contacts#show"
+  put "/contacts/:id" => "contacts#update"
+  delete "/contacts/:id" => "contacts#destroy"
 end
