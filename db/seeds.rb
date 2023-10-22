@@ -86,7 +86,7 @@ Milestone.create(
 
 Milestone.create(
   child_id: 3,
-  date: "07/13/2007",
+  date: "2007-07-13",
   milestone_category: "Communication",
   title: "said Die for the first time",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
