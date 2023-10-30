@@ -33,12 +33,16 @@ class PhotosController < ApplicationController
   end
 
   def create
-    @photo = Photo.new(photo_params)
-    @photo.user_id = current_user.id
-    
-    @photo.save
-    render :show
+    photo_params = params.require(:photo).permit(:image, :description, :date, :child_id, :milestone_id)
+    @photo = current_user.photos.build(photo_params)
+  
+    if @photo.save
+      render json: @photo, status: :created
+    else
+      render json: @photo.errors, status: :unprocessable_entity
+    end
   end
+  
 
   def show
     render :show
@@ -60,9 +64,9 @@ class PhotosController < ApplicationController
     render json: { message: "photo deleted successfully" }
   end
 
-  def photo_params
-    params.permit(:child_id, :milestone_id, :image, :description, :date)
-  end
+  # def photo_params
+  #   params.permit(:child_id, :milestone_id, :image, :description, :date)
+  # end
 
   private
     def photo
