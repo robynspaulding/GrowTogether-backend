@@ -2,6 +2,16 @@ class PhotosController < ApplicationController
   before_action :authenticate_user
   before_action :photo, only:[:show, :update, :destroy]
   
+  def index
+    @user = current_user
+    if @user
+      render json: @user.photos
+    else
+      render json: { error: "user not found"}
+    end
+
+  end
+
   def index_by_child
     @child = Child.find_by(id: params[:child_id])
 
