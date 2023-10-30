@@ -26,6 +26,7 @@ Milestone.create(
   date: "2005-05-13",
   milestone_category: "Physical",
   title: "First Steps",
+  image: "https://i.pinimg.com/originals/bc/f7/bb/bcf7bb8c9a2b2a2492491c37d6dfcae0.png",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
 )
 
@@ -34,6 +35,7 @@ Milestone.create(
   date: "2005-07-23",
   milestone_category: "Cognative",
   title: "tracked mom with eyes",
+  image: "https://i.pinimg.com/236x/f9/0c/df/f90cdf3ee67f0b1a3e6667ecd2544815.jpg",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
 )
 
@@ -49,6 +51,7 @@ Milestone.create(
   date: "2007-12-30",
   milestone_category: "Communication",
   title: "First Word - Mama",
+  image: "https://i.pinimg.com/236x/51/5f/82/515f82c0baeb0b61245dc60107bdc20e.jpg",
   description: "Lorem Ipsum has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 )
 
@@ -57,6 +60,7 @@ Milestone.create(
   date: "2007-11-02",
   milestone_category: "Physical",
   title: "First Steps",
+  image: "https://i.pinimg.com/236x/58/c2/4d/58c24db6e30aa8da9a922ab152c4b768.jpg",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
 )
 
@@ -81,6 +85,7 @@ Milestone.create(
   date: "2007-05-13",
   milestone_category: "Physical",
   title: "Held a Rapier",
+  image: "https://i.pinimg.com/236x/d0/50/0f/d0500ffd108191d3ab1b734ab0b3d038.jpg",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
 )
 
@@ -89,6 +94,7 @@ Milestone.create(
   date: "2007-07-13",
   milestone_category: "Communication",
   title: "said Die for the first time",
+  image: "https://i.pinimg.com/236x/74/df/83/74df8392a2f43617eb0c7f7e2ac99d60.jpg",
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
 )
 
@@ -104,6 +110,7 @@ Milestone.create(
   date: "2001-12-06",
   milestone_category: "Communication",
   title: "First Word - Bomb!",
+  image: "https://i.pinimg.com/236x/fb/86/40/fb8640926d796344e47ebc44e25650ca.jpg",
   description: "Lorem Ipsum has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 )
 
@@ -112,6 +119,7 @@ Milestone.create(
   date: "2010-06-14",
   milestone_category: "Physical",
   title: "Rolled over - down the stairs",
+  image: "https://i.pinimg.com/236x/ea/2b/f3/ea2bf373671ce54ddbc246717d1f114e.jpg",
   description: "Lorem Ipsum has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 )
 

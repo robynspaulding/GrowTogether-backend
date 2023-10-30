@@ -4,7 +4,7 @@
       recipient = params[:recipient]
       subject = params[:subject]
       body = params[:body]
-      # Implement email sending logic here (e.g., using Action Mailer)
+
       if CustomEmailMailer.send_email(recipient, subject, body).deliver_now
 
         render json: { message: 'Email sent successfully' }
