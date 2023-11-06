@@ -4,12 +4,13 @@ class PhotosController < ApplicationController
   
   def index
     @user = current_user
+  
     if @user
-      render json: @user.photos
+      @photos = @user.photos
+      render json: @photos
     else
-      render json: { error: "user not found"}
+      render json: { error: "User not found" }
     end
-
   end
 
   def index_by_child
@@ -33,9 +34,9 @@ class PhotosController < ApplicationController
   end
 
   def create
-    photo_params = params.require(:photo).permit(:image, :description, :date, :child_id, :milestone_id)
-    @photo = current_user.photos.build(photo_params)
-  
+    @photo = Photo.new(photo_params)
+    @photo.user_id = current_user.id
+    
     if @photo.save
       render json: @photo, status: :created
     else
@@ -64,9 +65,10 @@ class PhotosController < ApplicationController
     render json: { message: "photo deleted successfully" }
   end
 
-  # def photo_params
-  #   params.permit(:child_id, :milestone_id, :image, :description, :date)
-  # end
+  def photo_params
+    params.require(:photo).permit(:image, :description, :date, :user_id, :child_id, :milestone_id)
+  end
+  
 
   private
     def photo
