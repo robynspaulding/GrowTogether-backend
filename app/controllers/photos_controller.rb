@@ -2,6 +2,17 @@ class PhotosController < ApplicationController
   before_action :authenticate_user
   before_action :photo, only:[:show, :update, :destroy]
   
+  def index
+    @user = current_user
+  
+    if @user
+      @photos = @user.photos
+      render json: @photos
+    else
+      render json: { error: "User not found" }
+    end
+  end
+
   def index_by_child
     @child = Child.find_by(id: params[:child_id])
 
@@ -26,9 +37,13 @@ class PhotosController < ApplicationController
     @photo = Photo.new(photo_params)
     @photo.user_id = current_user.id
     
-    @photo.save
-    render :show
+    if @photo.save
+      render json: @photo, status: :created
+    else
+      render json: @photo.errors, status: :unprocessable_entity
+    end
   end
+  
 
   def show
     render :show
@@ -51,8 +66,9 @@ class PhotosController < ApplicationController
   end
 
   def photo_params
-    params.permit(:child_id, :milestone_id, :image, :description, :date)
+    params.require(:photo).permit(:image, :description, :date, :user_id, :child_id, :milestone_id)
   end
+  
 
   private
     def photo

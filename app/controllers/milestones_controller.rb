@@ -27,6 +27,7 @@ class MilestonesController < ApplicationController
       title: params[:title] || @milestone.title,
       description: params[:description] || @milestone.description,
       date: params[:date] || @milestone.date,
+      image: params[:image] || @milestone.image,
     )
     render :show
   end
@@ -37,7 +38,7 @@ class MilestonesController < ApplicationController
   end
 
   def milestone_params
-    params.permit(:child_id, :milestone_category, :title, :description, :date)
+    params.permit(:child_id, :milestone_category, :title, :description, :date, :image)
   end
 
   private

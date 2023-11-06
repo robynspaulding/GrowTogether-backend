@@ -33,6 +33,7 @@ Rails.application.routes.draw do
   put "/reminders/:id" => "reminders#update"
   delete "/reminders/:id" => "reminders#destroy"
 
+  get "/photos" => "photos#index"
   get "/child_photos/:child_id" => "photos#index_by_child" 
   get "/milestone_photos/:milestone_id" => "photos#index_by_milestone"
   post "/photos" => "photos#create"
